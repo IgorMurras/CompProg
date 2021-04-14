@@ -13,7 +13,7 @@ int32_t bitwiseand(int32_t a, int32_t b){
 }
 
 int32_t ehIgual(int32_t a, int32_t b){ 
-    return (a & b) ^ a; // pulamos
+    return (a & b) ^ a; // todo
 }
 int32_t limpaBitN(int32_t a, int8_t b){ 
     return a & ~(1<<b) ; // and com o invertido do 1 deslocado pra posicao p
@@ -35,15 +35,21 @@ int32_t setaByteEmP(int32_t a, int32_t b, uint8_t p){
     // obtendo a insercao de Y no lugar do byte desejado 
 }
 
+int32_t minimo(int32_t x, int32_t y){
+    return y ^ ((x ^ y) & -(x < y)); // pensar
+} 
+
+int32_t negacaoLogica(int32_t x){ 
+    return  (x^~x);
+}
 
 
 int main(void){
 
     //printf("%d\n",ehIgual(11,15));
     
-    printf("%x\n",setaByteEmP(0x12345678,0xFF,3));
+    printf("%d\n",negacaoLogica(-2));
     
     
     return 0;
 }
-
