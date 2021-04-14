@@ -8,6 +8,10 @@ int32_t mod8(int32_t a){
     return (a & 7); // os ultimos 3 bits estão ligados 
 }
 
+int32_t negativo(int32_t a){ 
+    return (~a)+1; // os ultimos 3 bits estão ligados 
+}
+
 int32_t bitwiseand(int32_t a, int32_t b){ 
     return ~((~a) | (~b)); // demorgan
 }
@@ -48,8 +52,9 @@ int main(void){
 
     //printf("%d\n",ehIgual(11,15));
     
-    printf("%d\n",negacaoLogica(-2));
+    printf("%d\n",negativo(82));
     
     
     return 0;
 }
+
