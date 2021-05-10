@@ -1,7 +1,7 @@
 // disass quartaBomba
 
 Dump of assembler code for function quartaBomba:
-  15ef: <+0>:	    push   %ebp
+   15ef: <+0>:	    push   %ebp
    15f0: <+1>:	    mov    %esp,%ebp
    15f2: <+3>:	    push   %ebx
    15f3: <+4>:	    sub    $0x824,%esp
@@ -13,7 +13,7 @@ Dump of assembler code for function quartaBomba:
    1613: <+36>:	    mov    %eax,-0xc(%ebp)
    1616: <+39>:	    xor    %eax,%eax
    1618: <+41>:	    sub    $0x8,%esp
-   161b: <+44>:	    lea    -0x1e9b(%ebx),%eax
+   161b: <+44>:	    lea    -0x1e9b(%ebx),%eax --------------
    1621: <+50>:	    push   %eax
    1622: <+51>:	    lea    -0x1fe3(%ebx),%eax
    1628: <+57>:	    push   %eax
@@ -45,7 +45,7 @@ Dump of assembler code for function quartaBomba:
    168e: <+159>:	pushl  -0x81c(%ebp)
    1694: <+165>:	lea    -0x80c(%ebp),%eax
    169a: <+171>:	push   %eax
-   169b: <+172>:	call   0x1040 <strcmp@plt>
+   169b: <+172>:	call    <strcmp@plt>
    16a0: <+177>:	add    $0x10,%esp
    16a3: <+180>:	test   %eax,%eax
    16a5: <+182>:	je     0x16ac <quartaBomba+189>

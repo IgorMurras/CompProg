@@ -1,27 +1,27 @@
 // disass terceiraBomba
 
 Dump of assembler code for function terceiraBomba:
-  1540: <+0>:	    push   %ebp
-   1541: <+1>:	    mov    %esp,%ebp
-   1543: <+3>:	    push   %ebx
-   1544: <+4>:	    sub    $0x14,%esp
-   1547: <+7>:	    call   0x1130 <__x86.get_pc_thunk.bx>
+   1540: <+0>:	       push   %ebp
+   1541: <+1>:	       mov    %esp,%ebp
+   1543: <+3>:	       push   %ebx
+   1544: <+4>:	       sub    $0x14,%esp
+   1547: <+7>:	       call   0x1130 <__x86.get_pc_thunk.bx>
    154c: <+12>:	    add    $0x2ab4,%ebx
    1552: <+18>:	    lea    -0x1f00(%ebx),%eax
    1558: <+24>:	    mov    %eax,-0xc(%ebp)
    155b: <+27>:	    sub    $0x8,%esp
-   155e: <+30>:	    pushl  0x8(%ebp)
-   1561: <+33>:	    pushl  -0xc(%ebp)
-   1564: <+36>:	    call   0x1040 <strcmp@plt>
-   1569: <+41>:	    add    $0x10,%esp
-   156c: <+44>:	    test   %eax,%eax
+   155e: <+30>:	    pushl  0x8(%ebp) ------- o que vai ser comparado
+   1561: <+33>:	    pushl  -0xc(%ebp) -------- o que vai ser comparado
+   1564: <+36>:	    call   0x1040 <strcmp@plt> --------- retorna no eax se é igual ou não
+   1569: <+41>:	    add    $0x10,%esp 
+   156c: <+44>:	    test   %eax,%eax ---------------
    156e: <+46>:	    jne    0x1577 <terceiraBomba+55>
    1570: <+48>:	    call   0x122d <boom>
    1575: <+53>:	    jmp    0x15e9 <terceiraBomba+169>
    1577: <+55>:	    sub    $0x8,%esp
    157a: <+58>:	    pushl  0x8(%ebp)
    157d: <+61>:	    lea    -0x1efa(%ebx),%eax
-   1583: <+67>:	    push   %eax
+   1583: <+67>:	    push   %eax  -------------o que vai ser comparado
    1584: <+68>:	    call   0x1040 <strcmp@plt>
    1589: <+73>:	    add    $0x10,%esp
    158c: <+76>:	    test   %eax,%eax
@@ -31,8 +31,8 @@ Dump of assembler code for function terceiraBomba:
    1597: <+87>:	    sub    $0x8,%esp
    159a: <+90>:	    pushl  0x8(%ebp)
    159d: <+93>:	    lea    -0x1eec(%ebx),%eax
-   15a3: <+99>:	    push   %eax
-   15a4: <+100>:	call   0x1040 <strcmp@plt>
+   15a3: <+99>:	    push   %eax -------------o que vai ser comparado
+   15a4: <+100>:	    call   0x1040 <strcmp@plt>
 --Type <RET> for more, q to quit, c to continue without paging--RET
    15a9: <+105>:	add    $0x10,%esp
    15ac: <+108>:	test   %eax,%eax

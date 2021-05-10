@@ -12,10 +12,13 @@ Dump of assembler code for function segundaBomba:
    1481: <+24>:	mov    %gs:0x14,%eax
    1487: <+30>:	mov    %eax,-0xc(%ebp)
    148a: <+33>:	xor    %eax,%eax
-   148c: <+35>: 	movl   $0x2062614c,-0x4c(%ebp) /* decimal:543318348 // modifica conteudo de %ebp-76*/
-   1493: <+42>:	movl   $0x42203a32,-0x48(%ebp) ---------------------------- decimal: 1109408306     
-   149a: <+49>:	movl   $0x626d6f,-0x44(%ebp)   ---------------------------- decimal: 6450543              
-   14a1: <+56>:	movl   $0x0,-0x40(%ebp) ----------------------------           tudo concatenado: decimal:54331834811094083066450543 ASCII: 62614c B203a32 b6d6f
+   148c: <+35>: 	movl   $0x2062614c,-0x4c(%ebp) ----------------------------   ASCII: baL   invertido: "Lab "
+   1493: <+42>:	movl   $0x42203a32,-0x48(%ebp) -----------------------------   ASCII: B :2  invertido: "2: B" 
+   149a: <+49>:	movl   $0x626d6f,-0x44(%ebp)   ----------------------------       ASCII: bmo   invertido: "omb"
+   14a1: <+56>:	movl   $0x0,-0x40(%ebp) 
+   
+   tudo concatenado em ASCII invertido: "Lab 2: Bomb"
+   
    14a8: <+63>:	movl   $0x0,-0x3c(%ebp)
    14af: <+70>:	movl   $0x0,-0x38(%ebp)
    14b6: <+77>:	movl   $0x0,-0x34(%ebp)
